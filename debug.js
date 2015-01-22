@@ -73,8 +73,7 @@ function debug(namespace) {
 
     // set `diff` timestamp
     var curr = +new Date();
-    var ms = curr - (prevTime || curr);
-    self.diff = ms;
+    self.diff = curr;//ms;
     self.prev = prevTime;
     self.curr = curr;
     prevTime = curr;
